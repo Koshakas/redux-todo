@@ -5,6 +5,7 @@ const filterTodo = (todos, status) => {
         case "DONE":
             return todos.filter(todo => todo.isComplete);
         default:
+            return todos;
     }
 };
 
